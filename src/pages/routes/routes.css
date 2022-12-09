@@ -1,0 +1,34 @@
+
+.routes-list {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  padding: calc(var(--space-base) * 2) 0;
+  border-top: 2px solid black;
+  margin-top: calc(var(--space-base) * 11);
+  overflow-y: scroll;
+}
+
+.routes-list > .loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.routes-list > .route-link {
+  color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: calc(var(--space-base) * 2);
+  margin-bottom: var(--space-base);
+  text-decoration: none;
+}
+
+.routes-list > .route-link p {
+  font-style: italic;
+  font-size: 12px;
+}
